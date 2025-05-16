@@ -330,6 +330,16 @@ export const definitions: DefinitionWithExtend[] = [
         extend: [m.forcePowerSource({powerSource: "Mains (single phase)"})],
     },
     {
+        fingerprint: tuya.fingerprint("TS0601", ["_TZE200_68nvbio9"]),
+        model: "ZM85EL-1x",
+        vendor: "Zemismart",
+        description: "Roller shade driver",
+        fromZigbee: [legacy.fz.tuya_cover, fz.ignore_basic_report],
+        toZigbee: [legacy.tz.tuya_cover_control, legacy.tz.tuya_cover_options, legacy.tz.tuya_data_point_test],
+        exposes: [e.cover_position().setAccess("position", ea.STATE_SET)],
+        extend: [],
+    },
+    {
         fingerprint: tuya.fingerprint("TS0601", ["_TZE200_1n2kyphz", "_TZE200_shkxsgis", "_TZE204_shkxsgis"]),
         model: "TB26-4",
         vendor: "Zemismart",

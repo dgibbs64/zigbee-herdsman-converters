@@ -5090,6 +5090,7 @@ export const definitions: DefinitionWithExtend[] = [
         ],
         whiteLabel: [
             tuya.whitelabel("Zemismart", "ZM16EL-03/33", "Cover motor", ["_TZE200_68nvbio9"]),
+            tuya.whitelabel("Zemismart", "ZM85EL-1x", "Roller shade driver", ["_TZE200_68nvbio9"]),
             tuya.whitelabel("Zemismart", "ZM25EL", "Cover motor", ["_TZE200_pw7mji0l"]),
             tuya.whitelabel("Zemismart", "ZM85EL-2Z", "Roman Rod I type U curtains track", ["_TZE200_cf1sl3tj", "_TZE200_nw1r9hp6"]),
             tuya.whitelabel("Hiladuo", "B09M3R35GC", "Motorized roller shade", ["_TZE200_9p5xmj5r"]),
